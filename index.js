@@ -19,6 +19,9 @@ app.use('/listings', listingsRoutes);
 // Welcome message with links
 app.get('/', (req, res) => {
     res.send(`
+    <head>
+                <title>Hall Booking App </title>
+            </head>
         <h1>Welcome to the Hall Booking App!</h1>
         <h2>Get the Details of bookings</h2>
         <ul>
