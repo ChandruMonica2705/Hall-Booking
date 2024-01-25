@@ -23,11 +23,6 @@ app.get('/', (req, res) => {
                 <title>Hall Booking App </title>
             </head>
         <h1>Welcome to the Hall Booking App!</h1>
-        <h2>Get the Details of bookings</h2>
-        <ul>
-            <li><a href="/listings/bookedData">List Of Booked Data</a></li>
-            <li><a href="/listings/customersWithBookedData">List Of Customers with Booked Data</a></li>
-        </ul>
     `);
 });
 
