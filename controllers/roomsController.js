@@ -1,6 +1,6 @@
 let rooms = [];
 
-exports.createRoom = (req, res) => {
+const createRoom = (req, res) => {
     const { seats, amenities, pricePerHour } = req.body;
     const room = {
         id: rooms.length + 1,
@@ -11,3 +11,6 @@ exports.createRoom = (req, res) => {
     rooms.push(room);
     res.send(`Room created successfully. Room ID: ${room.id}`);
 };
+export default {
+    createRoom
+}

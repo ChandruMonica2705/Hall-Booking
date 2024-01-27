@@ -1,10 +1,10 @@
 // bookingsRoutes.js
 
-const express = require('express');
+import express from 'express';
 const router = express.Router();
-const bookingsController = require('../controllers/bookingsController');
+import bookingsController from '../controllers/bookingsController.js';
 
 // POST /bookings/bookRoom
 router.post('/bookRoom', bookingsController.bookRoom);
 
-module.exports = router;
+export default router

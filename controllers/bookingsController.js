@@ -2,7 +2,7 @@
 
 let bookings = [];
 
-exports.bookRoom = (req, res) => {
+const bookRoom = (req, res) => {
     const { customerName, date, startTime, endTime, roomId } = req.body;
 
     // Check if the room is available for booking
@@ -34,4 +34,6 @@ exports.bookRoom = (req, res) => {
 };
 
 // Export the bookings array
-exports.bookings = bookings;
+export default {
+    bookRoom,
+bookings }

@@ -1,15 +1,15 @@
 // index.js
 
-const express = require('express');
-const bodyParser = require('body-parser');
+import express from 'express';
+//const bodyParser = require('body-parser');
 
 const app = express();
-app.use(bodyParser.json());
+app.use(express.json());
 
 // Load routes
-const roomsRoutes = require('./routes/roomsRoutes');
-const bookingsRoutes = require('./routes/bookingsRoutes');
-const listingsRoutes = require('./routes/listingsRoutes');
+import roomsRoutes from './routes/roomsRoutes.js';
+import bookingsRoutes from './routes/bookingsRoutes.js';
+import listingsRoutes from './routes/listingsRoutes.js';
 
 // Use routes
 app.use('/rooms', roomsRoutes);
